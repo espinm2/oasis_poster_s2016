@@ -173,21 +173,21 @@
 
 
   %Images for this section
-  {\includegraphics[height=10em]{img/ian_matt_pointing.jpg}}
-  {\includegraphics[height=10em]{img/ian_matt_contraption_frame.jpg}}
+  %{\includegraphics[height=10em]{img/office_color.jpg}}
+  {\includegraphics[height=10.25em]{img/oasis_1.png}}
 
-  {\includegraphics[height=13.8em]{img/table_top_with_people_tokens.jpg}}
+  {\includegraphics[height=13em]{img/aag_figure_3.png}}
 
 
-  {\includegraphics[height=11.25em]{img/office_color.jpg}} 
-  {\includegraphics[height=11.25em]{img/museum_false_color2.jpg}}
+  {\includegraphics[height=10.25em]{img/oasis_2.png}} 
+  %{\includegraphics[height=11.25em]{img/oasis_2.png}}
 
   %text for this section
-Current Research on the development of a spacial augmented tangible user interface for architectural daylighting simulation and design offers architects a novel approach in collaborative room design. \cite{NasmanEvaluation, ShengYYC09 }
+Previous research on the development of a spatially augmented tangible user interface for architectural daylighting simulation and design offered architects a novel approach in collaborative room design. \cite{NasmanEvaluation, ShengYYC09 }
 
-Recent user studies find the tools very helpful for visualizing lighting simulations and offers visual feedback to make better use of natural daylighting. An Evaluation from this study lead to extended the interface to include avatars, illumination visualizations, and additional window models.\cite{NasmanEvaluation}
+User studies found the tools very helpful for visualizing lighting simulations and offered visual feedback to make better use of natural daylighting. Evaluation from this study lead to extending the interface to include avatars, illumination visualizations, and additional window models.\cite{NasmanEvaluation}
 
-However more user data is required if we plan to refine this tool further. In order to collect more data an online interface which deliverers a similar set of capabilities based on physical system is under development.
+In order to collect more data we implemented an online interface which deliverers a set of capabilities similar to the physical system. Users are able to sketch designs which are translated into 3D models. Daylight simulated on these models relates illumination values to real world measurements.
 
  }%end section
 
@@ -211,18 +211,17 @@ However more user data is required if we plan to refine this tool further. In o
   \headerbox{Contributions}{name=contribution,column=1,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   
-   Currently a working prototype of the application offer functions similar to the physical system in order to aid in gathering user feedback. 
-   We used WebGL and the Raphael graphics libraries to build both the user interface and 3D visualization.
-   The following are the features implemented in our online application.
+   Currently a working prototype of the application offers functionality similar to the physical system.
+   We used WebGL and the Raphael graphics libraries to build both the user interface and 3D visualization. Our online application implements the following features.
    \begin{enumerate}\compresslist
-   \item Simple drag-drop user interface to design models with wall primitives
-   \item Avatar primitives that render geometry to view a POV scene
+   \item A simple drag and drop interface to design models with wall primitives
+   %\item Avatar primitives that render geometry to view a POV scene
    \item Save and load user created layouts
-   \item Interactive feedback that allows navigation through the user generated space with daylighting simulation
+   \item Interactive feedback that allows navigation through user generated spaces with simulated daylight
    \end{enumerate}
    
-\begin{center}{\includegraphics[width=15em]{img/system_pipeline.png}}\end{center}
-The current pipe line uses an camera and image detection to create the primitive positions\cite{NasmanEvaluation, ShengYYC09 }, however with our online application we bypass image recognition and directly find the wall primitives and save those positions onto a database for later study. Those primitives go into the graphics pipeline and we get a triangle mesh model and rendered images with lighting textures, which are displayed on the screen as a 3D model. 
+\begin{center}{\includegraphics[width=15em]{img/new_pipeline.png}}\end{center}
+The previous pipe line used a camera and image detection to create the primitive positions\cite{NasmanEvaluation, ShengYYC09 }, however with our online application we bypass image recognition and directly find the wall primitives and save those positions onto a database for later study. Those primitives go into the graphics pipeline and we get a triangle mesh model and rendered images with lighting textures, which are displayed on the screen as a 3D model. 
 \vspace{1em}
     
       

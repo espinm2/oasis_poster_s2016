@@ -195,13 +195,12 @@ In order to collect more data we implemented an online interface which deliverer
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{User Interface and Interactive Feedback}{name=userinterface,span = 2,column=2,,row=0}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\includegraphics[width=42em]{img/combined.png}}
+  {\includegraphics[width=42em]{img/viewer.jpg}}
   
   \begin{multicols}{2}
-  	\textbf{User Interface:} The interface offers a variety of tools to design and create floor layouts including wall selection, window placement, avatar points-of-view, and compass orientation.
+  	\textbf{User Interface:} The interface offers a variety of tools to design and create floor layouts including wall selection, window placement, furniture assignment, and compass orientation.
   	
-  	\textbf{Interactive Feedback:} After a design is saved, a 3D model of the floor plan renders on the right pane. This rendering is interactive such that can navigate around the model to view lighting from different view points. This view provides feedback which then the user can use alter their model to optimize natural daylighting usage. Moreover lighting visualization incorporated into these view points through avatar tokens can help users better understand illumintation in the 3D models.
-  \end{multicols}
+  	\textbf{Interactive Feedback:} After a design is created, selecting the next tab in the navigation bar will save the sketch and render a 3D model of the floor plan (A). From the model, the user can create a rendering of the room at any given time of day (B). The resulting rendering is interactive such that users can navigate around the model to view lighting from different view points. This view provides feedback which the user can then use to alter their design and optimize usage of natural daylighting. \end{multicols}
   \vspace{-0.6em}
    
 
@@ -230,29 +229,24 @@ The previous pipe line used a camera and image detection to create the primitive
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Future Research}{name=future,column=2,row=1,below=userinterface,span = 2,bottomaligned=problem}{
+\headerbox{Current Research}{name=future,column=2,row=1,below=userinterface,span = 2,bottomaligned=problem}{
 
 \begin{multicols}{2}
-
-
-	\textbf{Furniture Optimization}: A useful extension of the current pipeline that is under active research is furniture placement to maximize the utility of natural lighting. 
-	Previous research \cite{NasmanEvaluation} offers us a way to visualize over and under illumination of a scene through false color textures. Future extensions of this would be intelligently select where to place common furniture items to maximize the use of natural daylighting. 
-	Challenges faced are similar to previous work done on \emph{Make It Home}\cite{Yu} with the addition of quantifying daylighting usage. A clear set of challenges for implementing this feature is disccuesed blow:
 	
-	\begin{enumerate}\compresslist
-   \item Relating illumination values given by the daylighting simulation real world measures.
-   \item Creating a set of objects a spacial hierarchy of all objects modeled.
-   \item Creation of a cost function based on\cite{Yu} with the addition of daylighting
-   \item Choice of optimization the cost function to yield realistic results simulation
-   \end{enumerate}
-   
+	\textbf{Pilot Study}: We launched OASIS to a small number of willing participants. There are a number of optional questions that we hoped the participants would answer. The participants were asked to navigate the site and create a few models. We created a short video to help participants navigate around the system. Some of the participants reported tiny bugs through our bug submission form. Almost all the bugs have since been reviewed and patched. Additionally the feedback from participants both experienced and inexperienced in daylighting monitoring have provided useful in setting goals for future improvements.
+	
+
+	 \begin{center}\includegraphics[height=6em]{img/videoqr.jpg}	
+	  \end{center}	
+	\textbf{Viewer}:  The designs created using OASIS belong to the user, but we have added the option for the user to share designs with anyone. By putting the models in an encapsulated viewer, the only action the user needs to do in order to share their design is provide the unique share link associated with a model. We plan to showcase popular models that people wish to share in a gallery. 
+	
+	\begin{center}\includegraphics[height=10em]{img/nab.png}	
+	\end{center}	
+	
+	
+	
+	   
  \end{multicols}
- 
- 	
- \begin{center}\includegraphics[height=6em]{img/layout.png}	 
- \includegraphics[height=6em]{img/room.jpg}	
- \includegraphics[height=6em]{img/all_together.png}	
-  \end{center}
 }
 \headerbox{References}{name=credit, column = 1, row = 1, below = contribution, span = 1,bottomaligned=problem}{
 {\tiny

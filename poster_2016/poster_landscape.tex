@@ -192,14 +192,13 @@ In order to collect more data we implemented an online interface which deliverer
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{User Interface and Interactive Feedback}{name=userinterface,span = 2,column=2,,row=0}{
+\headerbox{Sketching Interface}{name=userinterface,span = 2,column=2,,row=0}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\includegraphics[width=42em]{img/viewer.jpg}}
+  \begin{center}{\includegraphics[width=35em]{img/pages.png}}\end{center}
   
-  \begin{multicols}{2}
-  	\textbf{User Interface:} The interface offers a variety of tools to design and create floor layouts including wall selection, window placement, furniture assignment, and compass orientation.
-  	
-  	\textbf{Interactive Feedback:} After a design is created, selecting the next tab in the navigation bar will save the sketch and render a 3D model of the floor plan (A). From the model, the user can create a rendering of the room at any given time of day (B). The resulting rendering is interactive such that users can navigate around the model to view lighting from different view points. This view provides feedback which the user can then use to alter their design and optimize usage of natural daylighting. \end{multicols}
+ \begin{multicols}{2}
+  	The sketching interface (A) features a variety of tools to design a space with furniture and windows. The user can change their compass orientation and geographic location. After a design is created the user can save and render the sketch by selecting the next tab on the navigation bar. The result from the rendering is a 3D geometry of the design (B). A task is a rendering of a 3D model with daylighting during a selected time.
+The user can proceed to the task list (C) to create tasks or view previous tasks. Once a task is created, it will take a few seconds to be rendered. Once the task is done rendering a view button will pop up. Selecting the view button will take the user to the daylighting simulation (D). The user can view which spots are over-illuminated or under-illuminated by selecting the analyze button. The simulation analysis (E) features a room with blue spots indicating under-illumination or red spots indication over-illumination. The user can use the tool to analyze their design or change it to better utilize daylighting. \end{multicols}
   \vspace{-0.6em}
    
 
@@ -228,11 +227,11 @@ The previous pipe line used a camera and image detection to create the primitive
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Current Research}{name=future,column=2,row=1,below=userinterface,span = 2,bottomaligned=problem}{
+\headerbox{Pilot Study}{name=future,column=2,row=1,below=userinterface,span = 2,bottomaligned=problem}{
 
 \begin{multicols}{2}
 	
-	\textbf{Pilot User Study}:In addition to the creation of OASIS, we also conducted a pilot user study. 
+	\textbf{Pilot User Study}: In addition to the creation of OASIS, we also conducted a pilot user study. 
 	We hypothesize that if OASIS is publicized to users online, then anonymous online users will construct models in our sketching interface and create daylight renderings for analysis.
 	Also, we speculate that the number of models anonymous online users will construct on OASIS will be quantitatively larger and from a broader range of users than previous user studies conducted on the Virtual Heliodon.
 	Collecting both active and passive feedback from users will help us better understand where improvements to OASIS can be made and how users currently experience OASIS.
@@ -240,11 +239,12 @@ The previous pipe line used a camera and image detection to create the primitive
 	To summarize, we anticipate  that this pilot user study will provide us valuable feedback to improve OASIS.
 	
 
-	 \begin{center}\includegraphics[height=6em]{img/videoqr.jpg}	
-	  \end{center}	
-	\textbf{Viewer}:  The designs created using OASIS belong to the user, but we have added the option for the user to share designs with anyone. By putting the models in an encapsulated viewer, the only action the user needs to do in order to share their design is provide the unique share link associated with a model. We plan to showcase popular models that people wish to share in a gallery. 
+	 
+	\textbf{Share-A-Model}:  The designs created with OASIS belong to the user, but we have added the option for the user to share designs with anyone. The only action the user needs to do in order to share their design is provide the unique share link associated with a model. We plan to showcase popular models that people wish to share in a gallery. 
 	
-	\begin{center}\includegraphics[height=10em]{img/nab.png}	
+	
+	\begin{center}\includegraphics[height=6em]{img/videoqr.jpg}	
+	\includegraphics[height=6em]{img/nab.png}	
 	\end{center}	
 	
 	

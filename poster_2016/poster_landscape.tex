@@ -211,13 +211,13 @@ The user can proceed to the task list (C) to create tasks or view previous tasks
    Currently a working prototype of the application offers functionality similar to the physical system.
    We used WebGL and the Raphael graphics libraries to build both the user interface and 3D visualization. Our online application implements the following features.
    \begin{enumerate}\compresslist
-   \item A simple drag and drop interface to design models with wall primitives
+   \item A simple sketching interface to design models with wall primitives
    %\item Avatar primitives that render geometry to view a POV scene
-   \item Save and load user created layouts
-   \item Interactive feedback that allows navigation through user generated spaces with simulated daylight
+   \item A task manager for managing daylight simulations
+   \item An interface for analyzing illumination
    \end{enumerate}
    
-\begin{center}{\includegraphics[width=15em]{img/new_pipeline.png}}\end{center}
+\begin{center}{\includegraphics[width=17.5em]{img/new_pipeline.png}}\end{center}
 The previous pipe line used a camera and image detection to create the primitive positions\cite{NasmanEvaluation, ShengYYC09 }, however with our online application we bypass image recognition and directly find the wall primitives and save those positions onto a database for later study. Those primitives go into the graphics pipeline and we get a triangle mesh model and rendered images with lighting textures, which are displayed on the screen as a 3D model. 
 \vspace{1em}
     
